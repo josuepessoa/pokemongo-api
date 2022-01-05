@@ -1,0 +1,25 @@
+{
+  "name": "pokemons",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josuepessoa/pokemongo-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josuepessoa/pokemongo-api/issues"
+  },
+  "homepage": "https://github.com/josuepessoa/pokemongo-api#readme"
+}
