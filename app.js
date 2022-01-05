@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 8877;
 const arq = require("./pokemons.json");
+const arq2 = require("./items.json");
 const cors = require('cors');
 
 
@@ -42,6 +43,34 @@ app.get("/", cors(corsOptions), (req, res) => {
     else {
 
         let pokemons = arq.pokemon
+        for (let i in pokemons) {
+
+            if (pokemons[i].id == id) {
+                res.json(pokemons[i]);
+                find = true
+            }
+        }
+
+        if (find === false) {
+            res.json({
+                msg: "erro",
+            });
+        }
+
+    }
+
+});
+
+
+app.get("/items", cors(corsOptions), (req, res) => {
+    const id = req.query.id;
+
+    if (typeof id === "undefined") {
+        res.json(arq2);
+    }
+    else {
+
+        let pokemons = arq2.items
         for (let i in pokemons) {
 
             if (pokemons[i].id == id) {
