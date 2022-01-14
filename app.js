@@ -18,7 +18,6 @@ const allowedOrigins = [
   'po-pokedex.vercel.app'
 
 ];
-let find = false
 
 const corsOptions = {
     origin: (origin, callback) => {
@@ -51,15 +50,14 @@ app.get("/", cors(corsOptions), (req, res) => {
 
             if (pokemons[i].id == id) {
                 res.json(pokemons[i]);
-                find = true
+            
             }
         }
-
-        if (find === false) {
-            res.json({
-                msg: "erro",
-            });
-        }
+      
+    res.json({
+        msg: "erro",
+    });
+       
 
     }
 
