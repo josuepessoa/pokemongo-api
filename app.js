@@ -12,7 +12,11 @@ const allowedOrigins = [
   'http://localhost',
   'http://localhost:8080',
   'http://localhost:8100',
-  'http://localhost:4200'
+  'http://localhost:4200',
+  'https://pokedex-ebc1b.firebaseapp.com',
+  'http://po-pokedex.herokuapp.com',
+  'po-pokedex.vercel.app'
+
 ];
 let find = false
 
