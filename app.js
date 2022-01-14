@@ -14,7 +14,7 @@ const allowedOrigins = [
   'http://localhost:8100',
   'http://localhost:4200',
   'https://pokedex-ebc1b.firebaseapp.com',
-  'http://po-pokedex.herokuapp.com',
+  'https://po-pokedex.herokuapp.com',
   'po-pokedex.vercel.app'
 
 ];
